@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { FaStar} from "react-icons/fa6";
 import { Link, useParams } from 'react-router-dom';
-import { FaCartShopping,FaAnglesRight } from "react-icons/fa6";
+import { FaCartShopping} from "react-icons/fa6";
 import { useDispatch, useSelector } from 'react-redux';
 import { cart, dec, inc } from '../Slice/CounterSlice';
 
@@ -33,7 +33,7 @@ function Single() {
                   
                 <div className='d-flex'>
                 <button className='btn text-white fs-5 fw-bold btn_sec mt-3 me-3' onClick={()=>dispatch(cart(pro))}>< FaCartShopping className='me-2 fs-4'/>Add to Cart</button>
-                <Link to='/login'><button className='btn text-white fs-5 fw-bold btn-primary mt-3'>< FaAnglesRight className='me-2 fs-4'/>Buy Now</button></Link>
+                <Link to='/login'><button className='btn text-white fs-5 fw-bold btn-primary mt-3'>Buy Now</button></Link>
                 </div>
             </div>
             <div className="col-lg-8 pro_sec col-md-6">
